@@ -1,7 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
 }
-
 
 header {
     background-color: #E5E1FF;
@@ -10,14 +10,15 @@ header {
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding-top: 89px;
-    padding-bottom: 52px;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    gap: 35px;
 }
 
-li {
-    padding-right: 63px;
-    font-size: 32px;
+nav li {
+    font-size: 26px;
     font-family: 'Source Serif Pro', sans-serif;
 }
 
@@ -25,6 +26,78 @@ a {
     text-decoration: none;
 }
 
+nav {
+    margin: 0 10%;
+    display: flex;
+    justify-content: start;
+}
+
 nav a {
     color: #2C217D;
+}
+
+#main {
+    background-color: #E5E1FF;
+    display: flex;
+    align-items: center;
+}
+
+.main-grid {
+    display: grid;
+    margin-left: 10%;
+    padding-bottom: 100px;
+    grid-template-rows: 538px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-picture {
+    width: 95%;
+}
+
+.main-picture img {
+    width: 100%;
+}
+
+.greeting {
+    margin: 0 20px;
+    color: #2C217D;
+}
+
+.greeting-message {
+    padding-bottom: 3px;
+    font-size: 80px;
+}
+
+h1 {
+    padding-bottom: 3px;
+    font-size: 98px;
+    color: #FFA800;
+}
+
+.job-title {
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.gradient-button {
+    background: linear-gradient(90deg, #FFA800 1%, #FFE22E);
+    border: none;
+    border-radius: 18px;
+    margin-top: 10%;
+    width: 70%;
+    height: 14%;
+    font-size: 40px;
+    color: white;
+}
+
+@media(max-width: 992px) {
+    nav ul {
+        display: none;
+    }
+    .greeting-message {
+        font-size: 70px;
+    }
+}
+
+@media(max-width: 1233px) {
 }
