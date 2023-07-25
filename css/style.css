@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+
+header {
+    background-color: #E5E1FF;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 89px;
+    padding-bottom: 52px;
+}
+
+li {
+    padding-right: 63px;
+    font-size: 32px;
+    font-family: 'Source Serif Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #2C217D;
+}
